@@ -6,44 +6,73 @@
     <title>نمایش تصاویر</title>
     <style>
         body {
-            font-family: Arial, sans-serif; /* استفاده از فونت مدرن */
-            background-color: #f8f8f8; /* پس‌زمینه آرام */
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
             margin: 0;
             padding: 20px;
         }
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* نمایش تصاویر به شیوه خودکار با حفظ اندازه حداقل ۳۰۰ پیکسل */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
         }
         .image-container {
-            overflow: hidden; /* جلوگیری از مازرسزی تصاویر */
-            border-radius: 10px; /* ایجاد گوشه‌های گرد برای تصاویر */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* سایه‌زنی برای اضافه کردن ابعاد */
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .image-container img {
             display: block;
             width: 100%;
             height: auto;
-            transition: transform 0.3s ease; /* اضافه کردن انیمیشن hover برای تصاویر */
+            transition: transform 0.3s ease;
         }
         .image-container:hover img {
-            transform: scale(1.05); /* بزرگ‌تر شدن تصاویر با هوور */
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
     <div class="gallery">
+        <!-- تصاویر -->
         <div class="image-container">
-            <img src="01.jpg" alt="تصویر ۱">
+            <img src="001.jpg" alt="تصویر ۱">
         </div>
         <div class="image-container">
-            <img src="02.jpg" alt="تصویر ۲">
+            <img src="002.jpg" alt="تصویر ۲">
         </div>
         <div class="image-container">
-            <img src="03.jpg" alt="تصویر ۳">
+            <img src="003.jpg" alt="تصویر ۳">
+        </div>
+        <div class="image-container">
+            <img src="004.jpg" alt="تصویر ۴">
+        </div>
+        <div class="image-container">
+            <img src="005.jpg" alt="تصویر ۵">
+        </div>
+        <div class="image-container">
+            <img src="006.jpg" alt="تصویر ۶">
+        </div>
+        <div class="image-container">
+            <img src="007.jpg" alt="تصویر ۷">
+        </div>
+        <div class="image-container">
+            <img src="008.jpg" alt="تصویر ۸">
+        </div>
+        <div class="image-container">
+            <img src="009.jpg" alt="تصویر ۹">
         </div>
         <!-- ادامه تصاویر -->
+        <div class="image-container">
+            <img src="010.jpg" alt="تصویر ۱۰">
+        </div>
+        <div class="image-container">
+            <img src="011.jpg" alt="تصویر ۱۱">
+        </div>
+        <!-- ادامه تصاویر -->
+        <div class="image-container">
+            <img src="097.jpg" alt="تصویر ۹۷">
+        </div>
     </div>
 </body>
 </html>
