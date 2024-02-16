@@ -6,37 +6,44 @@
     <title>نمایش تصاویر</title>
     <style>
         body {
-            background-color: #f2f2f2; /* پس‌زمینه خاکستری */
-        }
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* تغییر سایز تصاویر */
-            gap: 20px; /* فاصله بین تصاویر */
+            font-family: Arial, sans-serif; /* استفاده از فونت مدرن */
+            background-color: #f8f8f8; /* پس‌زمینه آرام */
+            margin: 0;
             padding: 20px;
         }
-        .grid-item {
-            background-color: #ffffff; /* پس‌زمینه سفید */
-            padding: 20px; /* فاصله بیشتر بین تصویر و قاب */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* نمایش تصاویر به شیوه خودکار با حفظ اندازه حداقل ۳۰۰ پیکسل */
+            gap: 20px;
         }
-        .grid-item img {
+        .image-container {
+            overflow: hidden; /* جلوگیری از مازرسزی تصاویر */
+            border-radius: 10px; /* ایجاد گوشه‌های گرد برای تصاویر */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* سایه‌زنی برای اضافه کردن ابعاد */
+        }
+        .image-container img {
+            display: block;
             width: 100%;
             height: auto;
-            display: block;
-            margin-bottom: 10px; /* فاصله بین تصاویر */
+            transition: transform 0.3s ease; /* اضافه کردن انیمیشن hover برای تصاویر */
+        }
+        .image-container:hover img {
+            transform: scale(1.05); /* بزرگ‌تر شدن تصاویر با هوور */
         }
     </style>
 </head>
 <body>
-    <h1>ZIRA NOTE</h1>
-    <div class="grid-container">
-        <div class="grid-item"><img src="01.jpg" alt="تصویر ۱"></div>
-        <div class="grid-item"><img src="02.jpg" alt="تصویر ۲"></div>
-        <div class="grid-item"><img src="03.jpg" alt="تصویر ۳"></div>
-        <div class="grid-item"><img src="04.jpg" alt="تصویر ۴"></div>
-        <div class="grid-item"><img src="05.jpg" alt="تصویر ۵"></div>
-        <div class="grid-item"><img src="06.jpg" alt="تصویر ۶"></div>
-        <div class="grid-item"><img src="07.jpg" alt="تصویر ۷"></div>
-        <div class="grid-item"><img src="08.jpg" alt="تصویر ۸"></div>
+    <div class="gallery">
+        <div class="image-container">
+            <img src="01.jpg" alt="تصویر ۱">
+        </div>
+        <div class="image-container">
+            <img src="02.jpg" alt="تصویر ۲">
+        </div>
+        <div class="image-container">
+            <img src="03.jpg" alt="تصویر ۳">
+        </div>
+        <!-- ادامه تصاویر -->
     </div>
 </body>
 </html>
