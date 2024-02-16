@@ -9,12 +9,27 @@
             font-family: Arial, sans-serif; /* Use a modern font */
             background-color: #f8f8f8; /* Calm background */
             margin: 0;
-            padding: 20px;
+            padding: 0;
+        }
+        header {
+            background-color: #333; /* Dark background for the header */
+            color: #fff; /* White text */
+            padding: 20px 0; /* Add padding only to top and bottom */
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+        }
+        .header-title {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin: 0;
         }
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Display images in an automatic grid with minimum width of 300px */
             gap: 20px;
+            padding: 20px;
         }
         .image-container {
             overflow: hidden; /* Prevent image overflow */
@@ -33,6 +48,9 @@
     </style>
 </head>
 <body>
+    <header>
+        <h1 class="header-title">ZIRA NOTEBOOK</h1>
+    </header>
     <div class="gallery">
         <div class="image-container">
             <img src="001.jpg" alt="Image 1">
