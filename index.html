@@ -5,24 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>نمایش تصاویر</title>
     <style>
+        body {
+            background-color: #f2f2f2; /* پس‌زمینه خاکستری */
+        }
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 10px;
-            padding: 10px;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* تغییر سایز تصاویر */
+            gap: 20px; /* فاصله بین تصاویر */
+            padding: 20px;
+        }
+        .grid-item {
+            background-color: #ffffff; /* پس‌زمینه سفید */
+            padding: 20px; /* فاصله بیشتر بین تصویر و قاب */
         }
         .grid-item img {
             width: 100%;
             height: auto;
             display: block;
+            margin-bottom: 10px; /* فاصله بین تصاویر */
         }
     </style>
 </head>
 <body>
-    <h1>ZIRA NOTEBOOK</h1>
-
+    <h1>ZIRA NOTE</h1>
     <div class="grid-container">
-        <div class="grid-item"><img src="01.jpg" alt="تصیویر ۱"></div>
+        <div class="grid-item"><img src="01.jpg" alt="تصویر ۱"></div>
         <div class="grid-item"><img src="02.jpg" alt="تصویر ۲"></div>
         <div class="grid-item"><img src="03.jpg" alt="تصویر ۳"></div>
         <div class="grid-item"><img src="04.jpg" alt="تصویر ۴"></div>
